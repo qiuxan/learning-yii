@@ -61,6 +61,12 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $data = [
+            'name' => 'ian',
+            'age' => 30
+        ];
+
+        dd($data);
         return $this->render('index');
     }
 

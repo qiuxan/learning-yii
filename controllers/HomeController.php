@@ -11,11 +11,18 @@ namespace app\controllers;
 use \yii\base\Controller;
 
 
-
 class HomeController extends Controller
 {
-    public function actionIndex(){
-        echo  11232;
+    public function actionIndex()
+    {
+        $data = [
+            'name' => 'ian',
+            'age' => 30
+        ];
+
+        print_arr($data);
+
+
     }
 
 }
